@@ -11,6 +11,13 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script>
+window.onload = () =>{
+    contato.onclick = () => alert('31 98888-9999')  
+}
+    </script>
+
 </head>
 
 
@@ -41,9 +48,17 @@
                 <ul class="nav navbar-nav flex-item hidden-xs">
                     <li><a href="index.html">Pagina Principal</a></li>
                     <li><a href="VideosSortidos.html">Videos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a id="contato" href="#">Contato</a></li>
                 </ul>
-                <ul class="nav navbar-nav flex-item hidden-xs pull-right">
+                <ul class="nav navbar-nav pull-right">
+                    <div class="barrapesquisa">
+                        <form id="busca" class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            
+                            <button id="btnc" class="btn btn-outline-success my-2 my-sm-0" type="submit"> <img src="imgs/lupa.png" alt=""> </button>
+                        
+                          </form>
+                        </div>
                     <li><a href="#" class=""></a></li>
                 </ul>
             </div>

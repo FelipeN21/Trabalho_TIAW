@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="estilos.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script>
+        window.onload = () =>{
+            contato.onclick = () => alert('31 98888-9999')  
+        }
+            </script>
 </head>
 <header>
     <nav class="navbar navbar-default navbar-doublerow navbar-trans">
@@ -34,14 +40,20 @@
             <div class="container">
                 <div class="flex-container">
                     <div class="navbar-header flex-item">
-                        <div class="navbar-brand" href=""> <a href="index.html">Titulo Provisório</a></div>
+                        <div class="navbar-brand" href=""> <a href="index.html"> <img src="imgs/Trasparente4.png" alt=""> </a></div>
                     </div>
                     <ul class="nav navbar-nav flex-item hidden-xs">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Videos</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a id="contato" href="#">Contato</a></li>
                     </ul>
-                    <ul class="nav navbar-nav flex-item hidden-xs pull-right">
+                    <ul class="nav navbar-nav pull-right">
+                        <div class="barrapesquisa">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button id="btnc" class="btn btn-outline-success my-2 my-sm-0" type="submit"> <img src="imgs/lupa.png" alt=""> </button>
+                              </form>
+                            </div>
                         <li><a href="#" class=""></a></li>
                     </ul>
                 </div>
