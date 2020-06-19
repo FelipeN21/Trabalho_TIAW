@@ -1,0 +1,11 @@
+.barrapesquisa
+{
+  float: right;
+}
+#btnc 
+{
+  background-color: #daa520;
+}
+#busca:focus{
+  border: solid 2px #daa520;
+}
