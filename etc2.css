@@ -1,0 +1,11 @@
+body
+{
+background-image: url(https://www.itl.cat/pngfile/big/87-876660_background-site-hd.jpg);
+
+}
+#lbl1{color: aqua;}
+#lbl2{color: aqua;}
+#lbl3{color: aqua;}
+#lbl4{color: aqua;}
+#suge{max-width: 20%;
+float: right;}

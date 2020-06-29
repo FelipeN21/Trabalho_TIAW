@@ -9,14 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="etc2.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <script>
-        window.onload = () =>{
-            contato.onclick = () => alert('31 98888-9999')  
+
+        window.onload = () => {
+            contato.onclick = () => alert('31 98888-9999')
+            suge.onclick = () => alert('Obrigado pela sugestão')
         }
-            </script>
+       
+        
+    </script>
 </head>
 <header>
     <nav class="navbar navbar-default navbar-doublerow navbar-trans">
@@ -40,21 +45,23 @@
             <div class="container">
                 <div class="flex-container">
                     <div class="navbar-header flex-item">
-                        <div class="navbar-brand" href=""> <a href="index.html"> <img src="imgs/Trasparente4.png" alt=""> </a></div>
+                        <div class="navbar-brand" href=""> <a href="index.html"> <img src="imgs/Trasparente4.png"
+                                    alt=""> </a></div>
                     </div>
                     <ul class="nav navbar-nav flex-item hidden-xs">
                         <li><a href="index.html">Pagina Principal</a></li>
                         <li><a href="VideosSortidos.html">Videos</a></li>
                         <li><a id="contato" href="#">Contato</a></li>
-                        <li><a id="contato" href="sugest.html">Sugestões</a></li>
                     </ul>
                     <ul class="nav navbar-nav  pull-right">
                         <div class="barrapesquisa">
                             <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button id="btnc" class="btn btn-outline-success my-2 my-sm-0" type="submit"> <img src="imgs/lupa.png" alt=""> </button>
-                              </form>
-                            </div>
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button id="btnc" class="btn btn-outline-success my-2 my-sm-0" type="submit"> <img
+                                        src="imgs/lupa.png" alt=""> </button>
+                            </form>
+                        </div>
                         <li><a href="#" class=""></a></li>
                     </ul>
                 </div>
@@ -65,45 +72,40 @@
 </header>
 
 <body>
+
     <div class="container body-content">
 
-        <div id="PAD" class="Titulo">
-            <h1>GEOGRAFIA</h1>
-        </div>
-        <div class="Mobile">
-            <div class="row">
-                <div class="videos">
-                    <div class="col-md-6">
-                        <iframe width="360" height="315" src="https://www.youtube.com/embed/h5WjNMGztvE" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group row">
+                        <label id="lbl1" for="colFormLabelSm"
+                            class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control form-control-sm" id="colFormLabelSm">
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <iframe width="360" height="315" src="https://www.youtube.com/embed/-UUB5DW_mnM" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    <div class="form-group row">
+                        <label id="lbl2" for="colFormLabel" class="col-sm-2 col-form-label">Nome</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="colFormLabel">
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                    <div class="form-group row">
+                        <label id="lbl3" for="colFormLabelLg"
+                            class="col-sm-2 col-form-label col-form-label-lg">Sugestão</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control form-control-lg" id="colFormLabelLg">
+                        </div>
+                    </div>
+                </form>
+                <label id="lbl4" for="customRange2">O quão satisfeito você está com o site?</label>
+                <input type="range" class="custom-range" min="0" max="10" id="customRange2">
 
-
-        <div class="Desktop">
-            <div class="row">
-                <div class="videos">
-                    <div class="col-md-6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/h5WjNMGztvE" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-UUB5DW_mnM" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
             </div>
+            <a href="index.html"> <button id="suge" type="button" class="btn btn-warning">Enviar</button></a>
         </div>
+    </div>
 </body>
 <section id="footer">
     <div class="container">
@@ -114,8 +116,8 @@
                     <h5>Quick links</h5>
                     <ul class="list-unstyled quick-links">
                         <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Pagina Principal</a></li>
-                    <li><a href="VideosSortidos.html"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-                    <li><a href="outros.html"><i class="fa fa-angle-double-right"></i>Outros</a></li>
+                        <li><a href="VideosSortidos.html"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                        <li><a href="outros.html"><i class="fa fa-angle-double-right"></i>Outros</a></li>
                     </ul>
                 </div>
             </div>
