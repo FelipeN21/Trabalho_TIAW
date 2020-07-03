@@ -11,65 +11,76 @@
     <link rel="stylesheet" href="estilos.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="popupbox.css">
 
     <script>
         window.onload = () =>{
-            contato.onclick = () => alert('31 98888-9999')  
+            contato.onclick = () => popup('31 98888-9999')  
         }
             </script>
 </head>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+	<div class="dialog-content">
+		<div id="dialog-message"></div>
+		<a href="#" class="button">Close</a>
+	</div>
+</div>
 <header>
     <nav class="navbar navbar-default navbar-doublerow navbar-trans">
         <!-- Master nav -->
         <!-- top nav -->
-        <nav class="navbar navbar-top">
-
-            <div class="container">
-                <!-- right nav top -->
-                <ul class="nav navbar-nav pull-right" style="padding:9px;">
-                    <a href="Login.html" class="btn btn-sm btn-primary"><span
-                            class="glyphicon glyphicon-certificate"></span>
-                        Cadastrar/ Entrar</a>
-                </ul>
-            </div>
-
-        </nav>
-
-        <!-- down nav -->
         <nav class="navbar navbar-down">
             <div class="container">
                 <div class="flex-container">
                     <div class="navbar-header flex-item">
-                        <div class="navbar-brand" href=""> <a href="index.html"> <img src="imgs/Trasparente4.png" alt=""> </a></div>
+                        <div class="navbar-brand" href=""><a href=""><img src="imgs/Trasparente4.png"></a></div>
                     </div>
                     <ul class="nav navbar-nav flex-item hidden-xs">
                         <li><a href="index.html">Pagina Principal</a></li>
                         <li><a href="VideosSortidos.html">Videos</a></li>
                         <li><a id="contato" href="#">Contato</a></li>
-                        <li><a id="contato" href="sugest.html">Sugestões</a></li>
-                        
+                        <li><a href="sugest.html">Sugestões</a></li>
+                                <div class="entradaP">
+                <div class="container">
+                    <!-- right nav top -->
+                    <ul class="nav navbar-nav pull-right" style="padding:9px;">
+                        <a href="Login.html" class="btn btn-sm btn-primary"><span
+                                class="glyphicon glyphicon-certificate"></span>
+                            Cadastrar/ Entrar</a>
                     </ul>
-                    <ul class="nav navbar-nav  pull-right">
-                        <div class="barrapesquisa">
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button id="btnc" class="btn btn-outline-success my-2 my-sm-0" type="submit"> <img src="imgs/lupa.png" alt=""> </button>
-                              </form>
-                            </div>
+                    <div class="barrapesquisa">
+                        <form action="Pesquisa.html" id="busca" class="form-inline my-2 my-lg-0">
+    
+                            <button id="btnc"
+                                onclick="alert('Direcionando para a pagina de pesquisa avançada (As Buscas são direcionadas para Sites de Conteudo Já Verificado)')"
+                                class="btn btn-outline-success my-2 my-sm-0" onclick=""> <img src="imgs/lupa.png"
+                                    alt=""> </button>
+                        </form>
+    
+    
+    
+    
+                    </div>
+                </div>
+            </div>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+    
                         <li><a href="#" class=""></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
+    
     </nav> <!-- /master nav -->
 </header>
 
 <body>
     <div class="container body-content">
-
+<div class="gotonext"><a href="VideosSortidos2.html"><img class="rreload" src="imgs/computer-icons-refresh-free-one-button-reload-png-clip-art.png" alt=""></a></div>
         <div id="PAD" class="Titulo">
-            <h1>Videos Sortidos</h1>
+            <h1>Vídeos Sortidos</h1>
         </div>
         <div class="Mobile">
             <div class="row">
@@ -166,39 +177,45 @@
             </div>
         </div>
 </body>
-<section id="footer">
-    <div class="container">
-        <div class="row text-center text-xs-center text-sm-left text-md-left">
-            <div class="col-xs-12 col-sm-4 col-md-4">
-
+<div class="quickC">
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                    <h5>Quick links</h5>
-                    <ul class="list-unstyled quick-links">
-                        <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Pagina Principal</a></li>
-                    <li><a href="VideosSortidos.html"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-                    <li><a href="outros.html"><i class="fa fa-angle-double-right"></i>Outros</a></li>
-                    </ul>
+    
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        
+                        <h5>Quick links</h5>
+                        <ul class="list-unstyled quick-links">
+                            
+                            <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Pagina Principal</a></li>
+                            <li><a href="VideosSortidos.html"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                            <li><a href="outros.html"><i class="fa fa-angle-double-right"></i>Outros</a></li>
+                        
+    
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p><u><a>Informações Confiaveis </a></u> is a Registered MSP/ISO Company</p>
+                        <p class="h6">© All right Reversed.<a class="text-green ml-2" target="_blank">Informações Confiaveis</a></p>
+                    </div>
+                    <hr>
                 </div>
             </div>
-            <div class="row">
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                    <p><u><a>Titulo ainda nao definido </a></u> is a Registered MSP/ISO Company</p>
-                    <p class="h6">© All right Reversed.<a class="text-green ml-2" target="_blank">Titulo ainda nao
-                            definido</a></p>
-                </div>
-                <hr>
-            </div>
-        </div>
-</section>
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+    </section>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="Pesquisa.js"></script>

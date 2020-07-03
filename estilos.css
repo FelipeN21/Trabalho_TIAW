@@ -13,6 +13,10 @@ body {
   padding: 40px 80px 40px 80px;
   box-shadow: -10px -10px 9px #33cc33;
 }
+.quickC
+{
+  background-color: rgb(134, 87, 111);
+}
 .user {
   font-size: 29px;
 
@@ -95,12 +99,43 @@ max-width: 100%;
 }
 #btnc 
 {
+  margin-top: 9px;
   background-color: #daa520;
+  
 }
 #busca:focus{
   border: solid 2px #daa520;
 }
-
+.lateral{
+  float: right;
+  max-width: 100%;
+  
+}
+.entradaP
+{
+float: left;
+}
+#secVR{
+  text-align: center;
+  justify-content: center;
+}
+#desj{
+  margin-left: 170px;
+  margin-right: -170px;
+}
+.BoasVindas{
+  max-width: 100%;
+  
+}
+.gotonext{
+  
+  text-decoration: rgba(13, 13, 13, 0.2);
+  max-width: 10%;
+}
+.rreload{
+  max-width: 40%;
+  max-height: 40%;
+}
 
 @media screen and (max-width:767px)
 {
@@ -115,6 +150,11 @@ max-width: 100%;
   .Desktop
   {
     display: none;
+  }
+  #desj{
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
   }
 
 
