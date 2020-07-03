@@ -1,0 +1,23 @@
+body
+{
+background-image: url(https://wallpapertag.com/wallpaper/full/c/a/a/157415-simplistic-wallpapers-1920x1080-lockscreen.jpg);
+
+}
+#lbl1{color: aqua;
+font-family: Arial, Helvetica, sans-serif;}
+#lbl2{color: aqua;
+    font-family: Arial, Helvetica, sans-serif;}
+#lbl3{color: aqua;
+    font-family: Arial, Helvetica, sans-serif;}
+#lbl4{color: aqua;
+    font-family: Arial, Helvetica, sans-serif;}
+#suge{max-width: 20%;
+float: right;}
+.custom{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-color: chocolate;
+    font-size: 10;
+    font-weight: 100;
+    font-style: italic;
+    
+}
